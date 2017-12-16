@@ -16,6 +16,9 @@
 		53DEF5DE1FE5905600CA0FAB /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53DEF5D91FE5905600CA0FAB /* SecondViewController.xib */; };
 		53DEF5DF1FE5905600CA0FAB /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DEF5DA1FE5905600CA0FAB /* UINavigationController+Extensions.swift */; };
 		53DEF5E01FE5905600CA0FAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DEF5DB1FE5905600CA0FAB /* ViewController.swift */; };
+		53DEF5E31FE5924D00CA0FAB /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DEF5E11FE5924D00CA0FAB /* ThirdViewController.swift */; };
+		53DEF5E41FE5924D00CA0FAB /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53DEF5E21FE5924D00CA0FAB /* ThirdViewController.xib */; };
+		53DEF5E61FE5960B00CA0FAB /* MyColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DEF5E51FE5960B00CA0FAB /* MyColorHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		53DEF5D91FE5905600CA0FAB /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		53DEF5DA1FE5905600CA0FAB /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
 		53DEF5DB1FE5905600CA0FAB /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		53DEF5E11FE5924D00CA0FAB /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		53DEF5E21FE5924D00CA0FAB /* ThirdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		53DEF5E51FE5960B00CA0FAB /* MyColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColorHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,7 @@
 				53D5C6711FDC48DE0007D08D /* Assets.xcassets */,
 				53D5C6731FDC48DE0007D08D /* LaunchScreen.storyboard */,
 				53D5C6761FDC48DE0007D08D /* Info.plist */,
+				53DEF5E51FE5960B00CA0FAB /* MyColorHelper.swift */,
 			);
 			path = CATransitions;
 			sourceTree = "<group>";
@@ -117,6 +124,8 @@
 		53DEF5DC1FE5905600CA0FAB /* PresentAnimations */ = {
 			isa = PBXGroup;
 			children = (
+				53DEF5E11FE5924D00CA0FAB /* ThirdViewController.swift */,
+				53DEF5E21FE5924D00CA0FAB /* ThirdViewController.xib */,
 			);
 			path = PresentAnimations;
 			sourceTree = "<group>";
@@ -207,6 +216,7 @@
 				53DEF5DE1FE5905600CA0FAB /* SecondViewController.xib in Resources */,
 				53D5C6751FDC48DE0007D08D /* LaunchScreen.storyboard in Resources */,
 				53D5C6721FDC48DE0007D08D /* Assets.xcassets in Resources */,
+				53DEF5E41FE5924D00CA0FAB /* ThirdViewController.xib in Resources */,
 				53D5C6701FDC48DE0007D08D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,8 +237,10 @@
 			files = (
 				53DEF5DD1FE5905600CA0FAB /* SecondViewController.swift in Sources */,
 				53DEF5DF1FE5905600CA0FAB /* UINavigationController+Extensions.swift in Sources */,
+				53DEF5E31FE5924D00CA0FAB /* ThirdViewController.swift in Sources */,
 				53DEF5E01FE5905600CA0FAB /* ViewController.swift in Sources */,
 				53D5C66B1FDC48DE0007D08D /* AppDelegate.swift in Sources */,
+				53DEF5E61FE5960B00CA0FAB /* MyColorHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
