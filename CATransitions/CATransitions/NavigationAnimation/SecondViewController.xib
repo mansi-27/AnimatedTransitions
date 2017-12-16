@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,6 +13,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController" customModule="CATransitions" customModuleProvider="target">
             <connections>
                 <outlet property="btnGoBack" destination="us5-EJ-6nH" id="QzH-BR-K8V"/>
+                <outlet property="btnHorizontalFlip" destination="u4k-xM-TI8" id="VAt-jK-iqQ"/>
+                <outlet property="btnPageCurl" destination="rZs-0A-c89" id="Gep-Jq-wdR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,18 +24,43 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="us5-EJ-6nH">
-                    <rect key="frame" x="164.5" y="328.5" width="46" height="30"/>
+                    <rect key="frame" x="158.5" y="325.5" width="58" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <state key="normal" title="Button"/>
                     <connections>
                         <action selector="btnGoBackTapped:" destination="-1" eventType="touchUpInside" id="BxU-CR-hwp"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4k-xM-TI8">
+                    <rect key="frame" x="158" y="239.5" width="58" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnHorizontalFlipTapped:" destination="-1" eventType="touchUpInside" id="kLM-ZR-Ipp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZs-0A-c89">
+                    <rect key="frame" x="158" y="411.5" width="58" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnPageCurlTapped:" destination="-1" eventType="touchUpInside" id="QIu-4Q-3AN"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="us5-EJ-6nH" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="5ON-lH-L0P"/>
+                <constraint firstItem="u4k-xM-TI8" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="MhZ-nU-t2c"/>
+                <constraint firstItem="rZs-0A-c89" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ZUo-ke-FCB"/>
                 <constraint firstItem="us5-EJ-6nH" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Zq9-jV-Qlp"/>
+                <constraint firstItem="rZs-0A-c89" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="1.25" id="hXD-aB-ajh"/>
+                <constraint firstItem="u4k-xM-TI8" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="0.75" id="zxK-hK-RNQ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
