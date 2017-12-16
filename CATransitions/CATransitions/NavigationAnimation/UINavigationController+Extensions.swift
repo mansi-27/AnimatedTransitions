@@ -18,9 +18,9 @@ extension UINavigationController {
         // Here, you define the animation pacing (whether it starts slowly, ends faster OR starts faster, ends slowly... etc)
         transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         // You can use kCATransitionMoveIn, kCATransitionFade, kCATransitionPush, or kCATransitionReveal as the transition type 🤗
-        transition.type = kCATransitionReveal
+        transition.type = kCATransitionPush
         // You can use kCATransitionFromBottom, kCATransitionFromTop, kCATransitionFromLeft, or kCATransitionFromRight as the transition sub-type 🤗
-        transition.subtype = kCATransitionFromBottom
+        transition.subtype = kCATransitionFromTop
         // Lastly, we add this animated transition to the layer of Navigation controller.
         // 👉🏼 Make sure, this is added before actually pushing/ pop-ing the next/previous view controller
         self.view.layer.add(transition, forKey: nil)
