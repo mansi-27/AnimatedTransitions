@@ -10,7 +10,7 @@ import UIKit
 
 extension UINavigationController {
     
-    func addTransition() {
+    func addAnimatedTransition() {
         /// First, we initiate a CATransition object
         let transition = CATransition()
         /// Second, we define the duration for the transition to get COMPLETED

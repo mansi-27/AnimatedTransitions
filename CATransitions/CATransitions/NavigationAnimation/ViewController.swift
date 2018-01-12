@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     // MARK: - IBActions
     @IBAction func btnNavigateTapped(_ sender: UIButton) {
         /// 👉🏼 Add your animation before you push/pop the view controller
-        navigationController?.addTransition()
+        navigationController?.addAnimatedTransition()
         /// 👉🏼 Don't forget to set the default animated property to FALSE
         navigationController?.pushViewController(SecondViewController(), animated: false)
     }
